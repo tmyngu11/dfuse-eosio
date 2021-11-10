@@ -122,7 +122,7 @@ checks() {
         set -e
         echo "Installing 'rice' executable"
         go get github.com/GeertJohan/go.rice
-        go get github.com/GeertJohan/go.rice/rice
+        go install github.com/GeertJohan/go.rice/rice@latest
         set +e
       popd > /dev/null
     else
